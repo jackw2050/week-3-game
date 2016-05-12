@@ -38,9 +38,9 @@ window.onload = function()
 	if (firstTime) {
 		firstTime = false;
 		backgroundAudio.play();
+		//$("#winLoseMessage").fadeOut( );
+		//$("#winLoseMessage").html( "");
 		$("#welcome").fadeOut("slow");
-		$("#winLoseMessage").fadeOut( );
-		$("#winLoseMessage").html( "");
 		guesses = 0;
 		generateArrays();
 	}
@@ -101,12 +101,16 @@ window.onload = function()
 			backgroundAudio.pause();
 			winAudio.play();
 			firstTime = true;
+			$("#welcome").html("Press any key to continue.");
+			$("#welcome").fadeIn("slow");
 		}
 		else if (guesses >= maxMistakes) {
 			losses++;
 			backgroundAudio.pause();
 			loseAudio.play();
 			firstTime = true;
+			$("#welcome").html("Press any key to continue.");
+			$("#welcome").fadeIn("slow");
 		}
 	}
 }

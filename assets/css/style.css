@@ -1,7 +1,17 @@
 /*html::before  { 
     background-image: url("../images/terminator.jpeg");
      background-repeat: repeat; 
+
+
+resize background image for various devices and load with responsive design
+
 }*/
+@font-face {
+    font-family: "Terminator";
+    src: url(../fonts/Terminator.ttf);
+    font-weight: bold;
+
+}
 
 
 html::before {
@@ -16,9 +26,9 @@ html::before {
     background-size: cover;
     will-change: transform; 
     z-index: -9999999;
-    font-family:  "Terminator Real NFI";
+  /*  font-family:  "Terminator Real NFI";*/
 }
-
+/*
 
 .full::before {
     background-image: url("../images/terminator2.jpg");
@@ -27,6 +37,7 @@ html::before {
     background-size: cover;
     -o-background-size: cover;
 }
+*/
 .body {
      background-color: transparent;      
 }
@@ -35,13 +46,32 @@ html::before {
  	margin:0px 0px 0px 0px ;
 }
 #alphabet{
-    font-family:  "Terminator Real NFI";
-    font-size:  20px;
-    color: #B87333 ;
+
+ /*   color: #B87333 ; */
+    color: #4A2D16;
+    font-family: 'Audiowide','Open Sans', sans-serif;
+}
+.letters{
+    color: #4A2D16;
+    font-family: 'Audiowide','Open Sans', sans-serif;
+}
+
+.pageBottom{
+    font-family: 'Audiowide';
+    color: #A9A7B3;
+}
+.pageTop{
+    font-size: 36px;
+    font-family: 'Audiowide';
+    color:#cd7f32;
+}
+.winLoseMessage{
+    text-align: center;
+    font-family: 'Audiowide';
+    color: #A9A7B3;
 }
 .tags{
-    font-family:  "Terminator Real NFI";
-    font-size:  12px;	
+font-family: 'Audiowide';
     color: #07060F;
 }
 .tb-l-10{
